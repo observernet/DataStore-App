@@ -3,6 +3,7 @@
         "purchase": "Numerical Data Purchase",
         "history": "Purchase History",
         "snap": "Sky Photo Request",
+        "wstation": "W-Station Data Request",
         "bigdata": "Bulk Data Request"
     },
     "login": {
@@ -95,6 +96,22 @@
                 "title_placeholder": "Enter a title.",
                 "body": "Details",
                 "body_placeholder": "Please provide detailed information.\n\nCoordinates range:\nRequested period:\nRequested count:\nDescription:\n",
+                "email": "Email",
+                "email_placeholder": "Enter your email address for the response.",
+                "request": "Submit Request",
+                "complete": "Your request has been successfully submitted."
+            }
+        }
+    },
+    "ws": {
+        "title": "Weather Station Data Request",
+        "content": {
+            "title": "Submit a Weather Station Data Request",
+            "input": {
+                "title": "Title",
+                "title_placeholder": "Enter a title.",
+                "body": "Details",
+                "body_placeholder": "Please provide detailed information.\n\nCoordinates range:\nRequested period:\nRequested data:\nDescription:\n",
                 "email": "Email",
                 "email_placeholder": "Enter your email address for the response.",
                 "request": "Submit Request",

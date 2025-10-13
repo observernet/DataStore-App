@@ -56,11 +56,15 @@ function changeLanguage() {
                     <span v-if="!isCollapsed">{{ $t('menu.purchase') }}</span>
                 </li>
                 <li :class="{hover: route.path.startsWith('/store/snap')}" @click="movePage('/store/snap')">
-                    <img src="@/assets/images/purchase.svg" width="24" height="24" />
+                    <img src="@/assets/images/sky_photo.svg" width="24" height="24" />
                     <span v-if="!isCollapsed">{{ $t('menu.snap') }}</span>
                 </li>
+                <li :class="{hover: route.path.startsWith('/store/wstation')}" @click="movePage('/store/wstation')">
+                    <img src="@/assets/images/ws.svg" width="24" height="24" />
+                    <span v-if="!isCollapsed">{{ $t('menu.wstation') }}</span>
+                </li>
                 <li :class="{hover: route.path.startsWith('/store/bigdata')}" @click="movePage('/store/bigdata')">
-                    <img src="@/assets/images/purchase.svg" width="24" height="24" />
+                    <img src="@/assets/images/bulkdata.svg" width="24" height="24" />
                     <span v-if="!isCollapsed">{{ $t('menu.bigdata') }}</span>
                 </li>
                 <li :class="{hover: route.path.startsWith('/store/history')}" @click="movePage('/store/history')">
@@ -72,12 +76,12 @@ function changeLanguage() {
                 <img src="@/assets/images/signout.svg" width="24" height="24" />
                 <span v-if="!isCollapsed">Sign Out</span>
             </div>
-            <div class="language-box" v-if="!isCollapsed">
+            <!--div class="language-box" v-if="!isCollapsed">
                 <select v-model="selectedLang" @change="changeLanguage">
                     <option value="ko">한국어</option>
                     <option value="en">English</option>
                 </select>
-            </div>
+            </div-->
         </div>
         <div class="content">
             <router-view />

@@ -8,6 +8,7 @@ import Purchase from './pages/Purchase.vue';
 import History from './pages/History.vue';
 import HistoryDetail from './pages/HistoryDetail.vue';
 import Snap from './pages/Snap.vue';
+import WStation from './pages/WeatherStation.vue';
 import BigData from './pages/BigData.vue';
 
 const routes = [
@@ -42,6 +43,11 @@ const routes = [
             {
                 path: "snap",
                 component: Snap,
+                meta: { requiresAuth: true }
+            },
+            {
+                path: "wstation",
+                component: WStation,
                 meta: { requiresAuth: true }
             },
             {

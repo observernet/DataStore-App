@@ -200,7 +200,7 @@ onMounted(() => requestPurchase());
 
 <template>
     <div class="content">
-        <div class="close" @click="emit('close')">X</div>
+        <div class="close" @click="emit('close')"><img src="@/assets/images/cancel.svg" width="24" height="24"></div>
         <h3>{{ $t('purchase.content.title2') }}</h3>
         <template v-if="isLoaded">
             <ul>

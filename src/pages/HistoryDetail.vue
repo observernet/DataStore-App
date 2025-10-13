@@ -5,8 +5,6 @@ import { useStore } from "@/store"
 import comm from '@/comm'
 import utils, { toast }  from "@/utils"
 
-
-const icons = import.meta.glob("@/assets/images/data/*.svg", { eager: true, import: "default" })
 const route = useRoute();
 const store = useStore();
 
@@ -25,8 +23,8 @@ function getCityName(code) {
     return city.name;
 }
 
-function getIcon(code) {
-	return icons[`/src/assets/images/data/${code}.svg`] || icons[`/src/assets/images/data/TMP.svg`]
+function openExplorer(txid) {
+    window.open(`${store.network.explorer}/tx/${txid}`);
 }
 
 async function onClickDownload() {
@@ -96,7 +94,7 @@ onMounted(() => requestPurchaseDetail());
 					</li>
 					<li>
 						<strong>{{ $t('history.detail.txid') }}</strong>
-                        <span>{{ apiResult.txid }}</span>
+                        <span style="cursor: pointer;" @click="openExplorer(apiResult.txid)">{{ apiResult.txid }}</span>
 					</li>
                     <li>
 						<strong>{{ $t('history.detail.nation') }}</strong>
@@ -125,7 +123,7 @@ onMounted(() => requestPurchaseDetail());
                         <tbody>
                             <tr v-for="item in apiResult.datas" :key="item.code">
                                 <td style="display: flex; align-items: center; gap: 6px;">
-                                    <img :src="getIcon(item.code)" width="24" height="24" />
+                                    <img src="@/assets/images/check_good.svg" width="24" height="24" />
                                     {{ store.getDataInfo(apiResult.data_type, item.code)?.name }}
                                 </td>
                                 <td>{{ utils.formatNumber(item.amount) }} OBSR</td>

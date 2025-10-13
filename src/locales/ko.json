@@ -3,6 +3,7 @@
         "purchase": "수치 데이타 구매",
         "history": "구매 내역",
         "snap": "하늘 사진 구매",
+        "wstation": "웨더스테이션 데이타 구매",
         "bigdata": "대량 데이타 구매"
     },
     "login": {
@@ -95,6 +96,22 @@
                 "title_placeholder": "제목을 입력해 주세요.",
                 "body": "내용",
                 "body_placeholder": "요청 내용을 자세히 적어 주세요.\n\n위경도범위:\n요청기간:\n요청건수:\n내용:\n",
+                "email": "이메일",
+                "email_placeholder": "회신 받을 이메일을 입력해주세요.",
+                "request": "구매 요청 보내기",
+                "complete": "구매 요청이 정상 접수 되었습니다"
+            }
+        }
+    },
+    "ws": {
+        "title": "웨더스테이션 데이타 구매",
+        "content": {
+            "title": "웨더스테이션 데이타 구매 요청",
+            "input": {
+                "title": "제목",
+                "title_placeholder": "제목을 입력해 주세요.",
+                "body": "내용",
+                "body_placeholder": "요청 내용을 자세히 적어 주세요.\n\n위경도범위:\n요청기간:\n요청데이타:\n내용:\n",
                 "email": "이메일",
                 "email_placeholder": "회신 받을 이메일을 입력해주세요.",
                 "request": "구매 요청 보내기",

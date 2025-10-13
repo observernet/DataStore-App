@@ -22,9 +22,10 @@ function onHideLoading() {
 let accountsChangedHandler;
 
 onBeforeMount(() => {
-    const lang = store.loadLocale() || 'en';
+    //const lang = store.loadLocale() || 'en';
+    const lang = 'en';
 	locale.value = lang;
-    
+
     store.loadUser();
 	store.loadDataType();
 	store.fetchDataType();

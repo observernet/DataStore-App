@@ -11,7 +11,6 @@ import '@vuepic/vue-datepicker/dist/main.css'
 import PurchaseConfirm from './PurchaseConfirm.vue'
 import AlertDialog from '@/components/AlertDialog.vue'
 
-const icons = import.meta.glob("@/assets/images/data/*.svg", { eager: true, import: "default" })
 const router = useRouter();
 const store = useStore();
 const { t } = useI18n();
@@ -87,10 +86,6 @@ const purchaseTotalAmount = computed(() => {
   	return purchaseDataList.value.reduce((sum, row) => sum + (row.amount || 0), 0);
 });
 
-
-function getIcon(code) {
-	return icons[`/src/assets/images/data/${code}.svg`] || icons[`/src/assets/images/data/TMP.svg`]
-}
 
 function formatDate(date) {
   	if ( !date ) return "";
@@ -192,6 +187,8 @@ function onPurchaseComplete() {
 					<v-select label="name"
 						:options="store.datatype"
   						:reduce="option => option.type"
+						:searchable="false"
+						:clearable="false"
 						:placeholder="$t('purchase.placeholder')"
 						@update:modelValue="onChangeDatatype"
 						style="margin-top: 16px; margin-bottom: 8px;"
@@ -246,7 +243,8 @@ function onPurchaseComplete() {
 						<div class="category">{{ item.category }}</div>
 						<div class="item" :class="{hover: selectDataList.includes(data.code)}" @click="toggleDataList(data.code)" v-for="(data, index2) in item.list" :key="index2">
 							<div class="name">
-								<img :src="getIcon(data.code)" width="24" height="24" />
+								<img src="@/assets/images/check_good.svg" width="24" height="24" v-if="selectDataList.includes(data.code)" />
+								<img src="@/assets/images/check_none.svg" width="24" height="24" v-else />
 								{{ data.name }}
 							</div>
 							<div class="amount">{{ data.amount }} OBSR</div>
@@ -287,7 +285,7 @@ function onPurchaseComplete() {
 							<tbody>
 								<tr v-for="(row, index) in purchaseDataList" :key="index">
 									<td style="display: flex; align-items: center; gap: 6px;">
-										<img :src="getIcon(row.code)" width="24" height="24" />
+										<img src="@/assets/images/check_good.svg" width="24" height="24" />
 										{{ row.name }}
 									</td>
 									<td>{{ utils.formatNumber(row.amount) }} OBSR</td>

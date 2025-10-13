@@ -31,7 +31,7 @@ function onClickNext() {
 
 async function connectWallet() {
   	if ( typeof window.ethereum === "undefined" ) {
-    	alert("MetaMask를 설치해주세요!");
+    	alert("Please install Metamasek!");
     	return;
   	}
 
