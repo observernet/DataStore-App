@@ -74,6 +74,10 @@ async function switchNetwork() {
     	}
   	}
 }
+
+function openTerms() {
+	window.open('https://obsr.notion.site/OBSERVER-DataStore-Terms-of-Use-28b2089063e380aa86c3d95057094b99');
+}
 </script>
 
 <template>
@@ -104,7 +108,7 @@ async function switchNetwork() {
 							{{ $t('terms.terms') }}
 						</div>
 					</div>
-					<div class="after">{{ $t('terms.detail') }}</div>
+					<div class="after" @click="openTerms()">{{ $t('terms.detail') }}</div>
 				</li>
 			</ul>
 			<button class="hover" style="padding: 14px 20px" @click="onClickNext()">
