@@ -1,0 +1,121 @@
+{
+    "menu": {
+        "purchase": "수치 데이타 구매",
+        "history": "구매 내역",
+        "snap": "하늘 사진 구매",
+        "bigdata": "대량 데이타 구매"
+    },
+    "login": {
+        "title": "데이타 스토어 로그인",
+        "button": "메타마스크로 로그인"
+    },
+    "terms": {
+        "title": "약관 및 방침",
+        "desc": "아래 데이터스토어 약관 및 방침을 정독해주시고 동의해 주세요.",
+        "essential": "필수",
+        "terms": "데이타스토어 이용약관",
+        "detail": "자세히 보기",
+        "agree": "모두 동의합니다",
+        "next": "다음"
+    },
+    "purchase": {
+        "title": "수치 데이타 구매",
+        "placeholder": "선택해 주세요.",
+        "datatype": {
+            "title": "데이터 유형",
+            "desc": "내려받길 원하는 데이터 유형을 선택해주세요."
+        },
+        "nation": {
+            "title": "국가 및 지역",
+            "nation": "국가",
+            "city": "도시",
+            "desc": "선택한 지역의 데이터를 내려받을 수 있습니다"
+        },
+        "period": {
+            "title": "기간",
+            "desc": "선택한 기간에 해당하는 데이터를 내려받을 수 있어요.",
+            "placeholder": "기간을 설정해 주세요."
+        },
+        "data": {
+            "title": "데이터",
+            "desc": "내려받고자 하는 데이터를 선택해 주세요."
+        },
+        "content": {
+            "title": "데이타 구매 정보",
+            "title2": "데이타 결제 정보",
+            "select": "선택해 주세요",
+            "type": "유형",
+            "nation": "국가 및 지역",
+            "period": "기간",
+            "days": "{n}일",
+            "nums": "외 {n}개",
+            "datas": "구매할 데이터",
+            "dataselect": "구매할 데이타를 선택해 주세요",
+            "amount": "금액",
+            "sum": "결제 예정 금액",
+            "settle": "최종 결제 금액",
+            "agree1": "위의 금액은 결제 예정 금액이며 최종 결제 금액은 달라질수 있습니다.",
+            "agree2": "선택 및 구매하려는 데이터는 일부 일자, 시간, 기간 동안의 데이터가 누락될 수 있으며 이에대한 구매금액의 환불 및 차감은 지원하지 않습니다.",
+            "agree3": "결제 관련 동의해 주세요.",
+            "purchase": "구매하기",
+            "purchase_input": "구매 정보 입력 및 동의를 해주세요.",
+            "settlement": "결제하기",
+            "settlement_input": "결제 관련 동의를 해주세요.",
+            "settlement_process": "결제 진행 중입니다."
+        }
+    },
+    "history": {
+        "title": "데이타 구매 내역",
+        "table": {
+            "txid": "TX ID",
+            "date": "구매 날짜",
+            "type": "데이타 유형",
+            "amount": "금액(OBSR)",
+            "status": "상태"
+        },
+        "detail": {
+            "title": "데이터 구매 정보",
+            "date": "구매 날짜",
+            "type": "데이타 유형",
+            "txid": "TX ID",
+            "nation": "국가 및 지역",
+            "period": "기간",
+            "datas": "구매한 데이터",
+            "amount": "금액",
+            "sum": "결제 금액",
+            "days": "{n}일"
+        }
+    },
+    "snap": {
+        "title": "하늘 사진 구매",
+        "content": {
+            "title": "하늘 사진 구매 요청",
+            "input": {
+                "title": "제목",
+                "title_placeholder": "제목을 입력해 주세요.",
+                "body": "내용",
+                "body_placeholder": "요청 내용을 자세히 적어 주세요.\n\n위경도범위:\n요청기간:\n요청건수:\n내용:\n",
+                "email": "이메일",
+                "email_placeholder": "회신 받을 이메일을 입력해주세요.",
+                "request": "구매 요청 보내기",
+                "complete": "구매 요청이 정상 접수 되었습니다"
+            }
+        }
+    },
+    "bigdata": {
+        "title": "대량 데이타 구매",
+        "content": {
+            "title": "대량 데이타 구매 요청",
+            "input": {
+                "title": "제목",
+                "title_placeholder": "제목을 입력해 주세요.",
+                "body": "내용",
+                "body_placeholder": "요청 내용을 자세히 적어 주세요.\n\n데이타유형:\n위경도범위:\n요청기간:\n요청데이타:\n내용:\n",
+                "email": "이메일",
+                "email_placeholder": "회신 받을 이메일을 입력해주세요.",
+                "request": "구매 요청 보내기",
+                "complete": "구매 요청이 정상 접수 되었습니다"
+            }
+        }
+    }
+}

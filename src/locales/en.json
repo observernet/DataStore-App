@@ -1,0 +1,121 @@
+{
+    "menu": {
+        "purchase": "Numerical Data Purchase",
+        "history": "Purchase History",
+        "snap": "Sky Photo Request",
+        "bigdata": "Bulk Data Request"
+    },
+    "login": {
+        "title": "Data Store Login",
+        "button": "Login with MetaMask"
+    },
+    "terms": {
+        "title": "Terms and Policies",
+        "desc": "Please read and agree to the following Data Store Terms and Policies.",
+        "essential": "Required",
+        "terms": "Data Store Terms of Service",
+        "detail": "View Details",
+        "agree": "I agree to all terms",
+        "next": "Next"
+    },
+    "purchase": {
+        "title": "Numerical Data Purchase",
+        "placeholder": "Please select.",
+        "datatype": {
+            "title": "Data Type",
+            "desc": "Select the type of data you wish to download."
+        },
+        "nation": {
+            "title": "Country & Region",
+            "nation": "Country",
+            "city": "City",
+            "desc": "You can download data for the selected regions."
+        },
+        "period": {
+            "title": "Period",
+            "desc": "Download data corresponding to your selected period.",
+            "placeholder": "Please set a date range."
+        },
+        "data": {
+            "title": "Data",
+            "desc": "Select the specific data you want to download."
+        },
+        "content": {
+            "title": "Data Purchase Information",
+            "title2": "Payment Information",
+            "select": "Please select",
+            "type": "Type",
+            "nation": "Country & Region",
+            "period": "Period",
+            "days": "{n} days",
+            "nums": "and {n} more",
+            "datas": "Selected Data",
+            "dataselect": "Please select the data to purchase",
+            "amount": "Amount",
+            "sum": "Estimated Payment",
+            "settle": "Final Payment",
+            "agree1": "The amount shown above is an estimate. The final amount may vary.",
+            "agree2": "Some data for certain dates or periods may be missing. Refunds or partial deductions are not supported for missing data.",
+            "agree3": "Please confirm your agreement to the payment terms.",
+            "purchase": "Proceed to Purchase",
+            "purchase_input": "Please review and agree to the purchase information.",
+            "settlement": "Make Payment",
+            "settlement_input": "Please confirm payment agreement.",
+            "settlement_process": "Processing your payment..."
+        }
+    },
+    "history": {
+        "title": "Data Purchase History",
+        "table": {
+            "txid": "TX ID",
+            "date": "Purchase Date",
+            "type": "Data Type",
+            "amount": "Amount (OBSR)",
+            "status": "Status"
+        },
+        "detail": {
+            "title": "Purchase Details",
+            "date": "Purchase Date",
+            "type": "Data Type",
+            "txid": "TX ID",
+            "nation": "Country & Region",
+            "period": "Period",
+            "datas": "Purchased Data",
+            "amount": "Amount",
+            "sum": "Total Payment",
+            "days": "{n} days"
+        }
+    },
+    "snap": {
+        "title": "Sky Photo Request",
+        "content": {
+            "title": "Submit a Sky Photo Request",
+            "input": {
+                "title": "Title",
+                "title_placeholder": "Enter a title.",
+                "body": "Details",
+                "body_placeholder": "Please provide detailed information.\n\nCoordinates range:\nRequested period:\nRequested count:\nDescription:\n",
+                "email": "Email",
+                "email_placeholder": "Enter your email address for the response.",
+                "request": "Submit Request",
+                "complete": "Your request has been successfully submitted."
+            }
+        }
+    },
+    "bigdata": {
+        "title": "Bulk Data Request",
+        "content": {
+            "title": "Submit a Bulk Data Request",
+            "input": {
+                "title": "Title",
+                "title_placeholder": "Enter a title.",
+                "body": "Details",
+                "body_placeholder": "Please provide detailed information.\n\nData type:\nCoordinates range:\nRequested period:\nRequested data:\nDescription:\n",
+                "email": "Email",
+                "email_placeholder": "Enter your email address for the response.",
+                "request": "Submit Request",
+                "complete": "Your request has been successfully submitted."
+            }
+        }
+    }
+}
