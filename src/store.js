@@ -9,20 +9,20 @@ export const useStore = defineStore("store", {
         nation: [],
         datatype_time: 0,
         datatype: [],
-        /*network: {
+        network: {
             name: 'Kaia Mainnet',
             rpc: 'https://public-en.node.kaia.io',
             chainId: '0x2019',
             symbol: 'KAIA',
             explorer: 'https://kaiascan.io',
-        },*/
-        network: {
+        },
+        /*network: {
             name: 'Kaia Kairos Testnet',
             rpc: 'https://public-en-kairos.node.kaia.io',
             chainId: '0x3e9',
             symbol: 'KAIA',
             explorer: 'https://kairos.kaiascan.io',
-        },
+        },*/
     }),
     getters: {
         isAuthenticated: (state) => !!state.user,

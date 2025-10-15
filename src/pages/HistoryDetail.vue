@@ -67,7 +67,7 @@ async function requestPurchaseDetail() {
             purchaseID: route.params.id,
         });
         apiResult.value = result;
-        console.log('requestPurchaseDetail:', result);
+        //console.log('requestPurchaseDetail:', result);
 
     } catch (err) {
         console.error("requestPurchaseDetail error:", err);

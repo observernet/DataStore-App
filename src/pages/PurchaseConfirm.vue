@@ -116,7 +116,7 @@ async function updatePurchase(txid) {
             purchaseID: apiResult.value.purchaseID,
             txid: txid,
         });
-        console.log('updatePurchase:', result);
+        //console.log('updatePurchase:', result);
 
     } catch (err) {
         console.error("updatePurchase error:", err);
@@ -161,7 +161,8 @@ async function requestPayment() {
         const paymentContract = new ethers.Contract(PAYMENT_ADDRESS, PAYMENT_ABI, signer);
 
         const purchaseID = parseInt(apiResult.value.purchaseID);
-        const totalAmount = ethers.parseUnits(apiResult.value.totalAmount.toString(), 8);
+        const safeAmountStr = Number(apiResult.value.totalAmount).toFixed(8); 
+        const totalAmount = ethers.parseUnits(safeAmountStr, 8);
 
         const userAddress = await signer.getAddress();
         const balance = await obsr.balanceOf(await signer.getAddress());
@@ -181,7 +182,7 @@ async function requestPayment() {
         // payment 실행
         const tx = await paymentContract.payment(purchaseID, totalAmount);
         const receipt = await tx.wait();
-        console.log("✅ Payment confirmed:", receipt);
+        //console.log("✅ Payment confirmed:", receipt);
 
         // DB 갱신
         await updatePurchase(receipt.hash);
